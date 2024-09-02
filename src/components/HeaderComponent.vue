@@ -28,21 +28,6 @@ const signOut = async () => {
 }
 </script>
 
-<style scoped>
-header {
-  background: linear-gradient(to right, #0c1d2a, #4299e1, #3182ce);
-}
-
-header button {
-  transition: background-color 0.3s ease;
-}
-
-header button:hover {
-  background-color: #c53030;
-}
-</style>
-
-
 <template>
   <div>
     <header v-if="!loading" class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white p-4 flex items-center justify-between shadow-md rounded-b-lg">
@@ -56,3 +41,19 @@ header button:hover {
     </header>
   </div>
 </template>
+
+
+
+<style scoped>
+header {
+  background: linear-gradient(to right, #0c1d2a, #4299e1, #3182ce);
+}
+
+header button {
+  transition: background-color 0.3s ease;
+}
+
+header button:hover {
+  background-color: #c53030;
+}
+</style>
