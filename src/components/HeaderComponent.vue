@@ -1,16 +1,3 @@
-<template>
-  <div> 
-    <header v-if="!loading" class="bg-gray-800 text-white p-4 flex items-center justify-between">
-      <div class="flex items-center">
-        <img v-if="user" :src="user.photoURL" alt="User Avatar" class="w-10 h-10 rounded-full mr-3" />
-        <span v-if="user" class="font-semibold">{{ user.displayName }}</span>
-      </div>
-      <button v-if="user" @click="signOut" class="bg-red-500 px-4 py-2 rounded-lg hover:bg-red-600">
-        Выход
-      </button>
-    </header>
-  </div>
-</template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
@@ -40,3 +27,32 @@ const signOut = async () => {
   }
 }
 </script>
+
+<style scoped>
+header {
+  background: linear-gradient(to right, #0c1d2a, #4299e1, #3182ce);
+}
+
+header button {
+  transition: background-color 0.3s ease;
+}
+
+header button:hover {
+  background-color: #c53030;
+}
+</style>
+
+
+<template>
+  <div>
+    <header v-if="!loading" class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white p-4 flex items-center justify-between shadow-md rounded-b-lg">
+      <div class="flex items-center space-x-4">
+        <img v-if="user" :src="user.photoURL" alt="User Avatar" class="w-12 h-12 rounded-full border-2 border-gray-700" />
+        <span v-if="user" class="font-semibold text-lg">{{ user.displayName }}</span>
+      </div>
+      <button v-if="user" @click="signOut" class="bg-red-600 px-4 py-2 rounded-lg text-white font-medium shadow-md hover:bg-red-700 transition-colors duration-300">
+        Выход
+      </button>
+    </header>
+  </div>
+</template>

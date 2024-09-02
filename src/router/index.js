@@ -4,7 +4,7 @@ import HabitTracker from '@/views/HabitTracker.vue';
 import Login from '@/views/LoginView.vue';
 import Home from '@/views/HomeView.vue';
 import HelpView from '@/views/HelpView.vue';
-
+import AboutUs from '@/views/AboutUs.vue';
 const routes = [
   {
     path: '/',
@@ -13,6 +13,10 @@ const routes = [
   {
     path: '/help',
     component: HelpView,
+  },
+  {
+    path: '/aboutUs',
+    component: AboutUs
   },
   {
     path: '/login',

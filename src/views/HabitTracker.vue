@@ -1,14 +1,3 @@
-<template>
-  <div>
-    <HeaderComponent />
-    <div class="p-6 max-w-2xl mx-auto">
-      <HabitForm :habit="editingHabit" @save="fetchHabits" />
-      <HabitList :habits="habits" @edit="setEditingHabit" />
-    </div>
-  </div>
-      <div v-if="isLoading" class="text-center">Загрузка привычек...</div>
-</template>
-
 <script setup>
 import { ref, onMounted } from 'vue'
 import { collection, query, where, onSnapshot } from 'firebase/firestore'
@@ -46,3 +35,14 @@ const setEditingHabit = (habit) => {
 
 onMounted(fetchHabits)
 </script>
+
+<template>
+  <div>
+    <HeaderComponent />
+    <div class="p-6 max-w-2xl mx-auto">
+      <HabitForm :habit="editingHabit" @save="fetchHabits" />
+      <HabitList :habits="habits" @edit="setEditingHabit" />
+    </div>
+  </div>
+      <div v-if="isLoading" class="text-center">Загрузка привычек...</div>
+</template>

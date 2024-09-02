@@ -16,14 +16,14 @@
             >Главная</router-link
           >
           <router-link
+            to="/aboutUs"
+            class="text-gray-700 mx-3 hover:text-blue-500 transition-transform duration-300 ease-in-out"
+            >О нас</router-link
+          >
+          <router-link
             to="/help"
             class="text-gray-700 mx-3 hover:text-blue-500 transition-transform duration-300 ease-in-out"
             >Справка</router-link
-          >
-          <router-link
-            to="/about"
-            class="text-gray-700 mx-3 hover:text-blue-500 transition-transform duration-300 ease-in-out"
-            >О нас</router-link
           >
         </nav>
       </div>
