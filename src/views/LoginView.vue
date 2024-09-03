@@ -36,7 +36,7 @@ const signInWithGoogle = async () => {
 </script>
 
 <template>
-  <div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-50 to-blue-200">
+  <div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-50 to-blue-200" >
     <div class="p-8 max-w-md mx-auto bg-white shadow-xl rounded-lg border border-gray-200 relative overflow-hidden">
       <div class="absolute inset-0 bg-blue-100 opacity-50 z-[-1]"></div>
       <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">Вход в систему</h2>

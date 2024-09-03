@@ -29,17 +29,15 @@ const handleEdit = () => {
 }
 </script>
 
-<style scoped>
-li {
-  cursor: pointer;
-}
-</style>
-
 <template>
-  <li class="mb-4 flex items-start p-4 bg-white rounded-lg shadow-md transition-transform transform hover:scale-105">
-
+  <li
+    class="mb-4 flex items-start p-4 bg-white rounded-lg shadow-md transition-transform transform hover:scale-105"
+  >
     <div class="flex-1">
-      <span @click="toggleDetails" class="cursor-pointer text-lg font-semibold text-gray-800 hover:text-blue-600 transition-colors">
+      <span
+        @click="toggleDetails"
+        class="cursor-pointer text-lg font-semibold text-gray-800 hover:text-blue-600 transition-colors"
+      >
         {{ habit.name }} - {{ habit.frequency }}
       </span>
     </div>
@@ -49,8 +47,19 @@ li {
       :disabled="isDeleting"
       class="ml-4 bg-red-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400 disabled:opacity-50"
     >
-      <svg class="w-4 h-4 inline-block mr-1 align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      <svg
+        class="w-4 h-4 inline-block mr-1 align-middle"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"
+        />
       </svg>
       Удалить
     </button>
@@ -64,7 +73,13 @@ li {
         Редактировать
       </button>
     </div>
-    <!-- Индикатор удаления -->
     <div v-if="isDeleting" class="ml-4 text-center text-red-500">Удаление...</div>
   </li>
 </template>
+
+
+<style scoped>
+li {
+  cursor: pointer;
+}
+</style>

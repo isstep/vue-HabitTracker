@@ -31,19 +31,19 @@
 
     <main class="flex-grow">
       <section class="flex items-center justify-center py-24 bg-blue-100">
-        <div
-          class="p-10 max-w-lg mx-auto rounded-lg text-center transition-transform transform hover:scale-105 duration-300 ease-in-out"
-        >
+        <div class="p-10 max-w-lg mx-auto rounded-lg text-center ease-in-out">
           <h2 class="text-4xl font-bold mb-4 text-blue-600">Добро пожаловать в HabitTracker</h2>
           <p class="text-lg text-gray-700 mb-6">
             Отслеживайте свои привычки и достигайте своих целей с легкостью и удовольствием!
           </p>
-          <router-link
-            to="/login"
-            class="bg-blue-600 text-white px-8 py-4 rounded-full shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-600"
-          >
-            Войти в систему
-          </router-link>
+          <div class="transition-transform transform hover:scale-105">
+            <router-link
+              to="/login"
+              class="bg-blue-600 text-white px-8 py-4 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+            >
+              Войти в систему
+            </router-link>
+          </div>
         </div>
       </section>
 

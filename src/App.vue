@@ -7,6 +7,8 @@ import Cookies from 'js-cookie'
 const user = ref(null)
 const router = useRouter()
 
+
+
 onMounted(() => {
   const savedUser = Cookies.get('user')
   if (savedUser) {
@@ -18,7 +20,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex flex-col min-h-screen bg-gray-100">
+  <div class="flex flex-col min-h-screen bg-gray-100" v-auto-animate>
     <router-view />
   </div>
 </template>
