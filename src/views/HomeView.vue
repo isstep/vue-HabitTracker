@@ -30,7 +30,8 @@
     </header>
 
     <main class="flex-grow">
-      <section class="flex items-center justify-center py-24 bg-blue-100">
+      <section class="flex items-center justify-center py-24 bg-blue-100"
+      style="background-image: url('https://get.wallhere.com/photo/minimalism-vector-colorful-Flatdesign-1670925.jpg'); background-size: cover; background-position: center;">
         <div class="p-10 max-w-lg mx-auto rounded-lg text-center ease-in-out">
           <h2 class="text-4xl font-bold mb-4 text-blue-600">Добро пожаловать в HabitTracker</h2>
           <p class="text-lg text-gray-700 mb-6">
